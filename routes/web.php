@@ -11,12 +11,16 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 
 // Route::get('send', 'mailController@send');
 
-Route::post('send', 'mailController@send');
+Route::post('/send', 'mailController@send');
 Route::get('email', 'mailController@email');
+Auth::routes();
+
+Route::get('/', 'HomeController@index')->name('home');
+Route::get('/user/{user}', 'UserController@show')->name('user.show');
