@@ -4,6 +4,7 @@
   <title></title>
 </head>
 <body>
-  <h1>this is mail  {{ $msg }}</h1>
+  <h1>this is mail</h1>
+  <p>お茶しようぜ</p>
 </body>
 </html>
